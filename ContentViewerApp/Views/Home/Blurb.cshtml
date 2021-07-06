@@ -1,0 +1,14 @@
+﻿@model BlurbViewModel;
+
+@{
+    ViewData["Title"] = "Blurb";
+}
+
+<div class="text-center">
+
+    @Html.Raw(@Model.Description)
+
+    <div>
+        @Html.ActionLink("Back to Index", "Index")
+    </div>
+</div>
